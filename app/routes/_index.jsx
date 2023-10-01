@@ -114,6 +114,22 @@ export default function Index() {
     return (
         <div>
             <h1 style={{textAlign: "center"}}>Configuration page</h1>
+            <div style={{margin: "auto", width: "10vw"}}>
+                <h3
+                    key={"test"}>
+                    Powered by
+                    <span style={{
+                        backgroundImage: "linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red)",
+                        WebkitBackgroundClip: "text",
+                        backgroundClip: "text",
+                        color: "transparent"
+                    }}>
+                        {" Remix"}
+                    </span>
+                </h3>
+            </div>
+
+
             <img style={{width: "90vw", display: "block", marginLeft: "auto", marginRight: "auto"}}
                  src="/mercedes.jpeg" alt="Picture of a mercedes"/>
             <h1>{modelInfo.name}</h1>
