@@ -5,6 +5,7 @@ import {useLoaderData} from "@remix-run/react";
 import React, {useState, useEffect} from "react";
 import {getSession, commitSession} from "../sessions";
 import {createSession, json} from "@remix-run/node";
+import * as crypto from "crypto";
 
 export async function loader({request}) {
     let session = await getSession(
@@ -114,7 +115,7 @@ export default function Index() {
     return (
         <div>
             <h1 style={{textAlign: "center"}}>Configuration page</h1>
-            <div style={{margin: "auto", width: "10vw"}}>
+            <div style={{margin: "auto", width: "50%", textAlign: "center"}}>
                 <h3
                     key={"test"}>
                     Powered by
